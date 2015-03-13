@@ -1,0 +1,18 @@
+// HackPro.idl : IDL source for HackPro
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (HackPro.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(C8D35364-FDD8-4571-96BB-A9A34C767B16),
+	version(1.0),
+	helpstring("HackPro 1.0 Type Library")
+]
+library HackProLib
+{
+	importlib("stdole2.tlb");
+};

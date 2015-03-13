@@ -1,0 +1,977 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\HackPro.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "1 TYPELIB ""HackPro.tlb""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 264, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About HackPro"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,23,34,21,20
+    LTEXT           "HackPro Version 1.0",IDC_STATIC,67,24,65,8,SS_NOPREFIX
+    LTEXT           "Developed by Markandey Singh",IDC_STATIC,67,38,102,8
+    DEFPUSHBUTTON   "OK",IDOK,206,96,50,16,WS_GROUP
+    LTEXT           "SASTRA,Thanjavur",IDC_STATIC,67,52,62,8
+    LTEXT           "Mail me at mark.dawn@gmail.com",IDC_STATIC,67,66,108,8
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,7,104,62,8
+    LTEXT           "A product of Redeemer Group, SASTRA",IDC_STATIC,7,7,128,
+                    8
+END
+
+IDD_HACKPRO_DIALOG DIALOGEX 0, 0, 535, 315
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HackPro"
+MENU IDR_MENU3
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,8,92,281
+    CONTROL         "",IDC_MHOLD,"Static",SS_BLACKFRAME | SS_SUNKEN,103,8,
+                    426,282
+    LTEXT           "",IDC_MSTATUS,7,293,470,13
+    LTEXT           "Select any Window",IDC_STATIC,241,150,62,8
+END
+
+IDD_MACADD DIALOGEX 0, 0, 336, 231
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_G_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,33,151,
+                    100,15
+    CONTROL         "",IDC_G_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,140,151,
+                    100,15
+    CONTROL         "",IDC_G_IPADDRESS,"SysIPAddress32",WS_TABSTOP,35,191,
+                    100,15
+    EDITTEXT        IDC_S_MAC,145,192,97,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Get Now",IDC_S_BUTGET,249,192,50,14
+    PUSHBUTTON      "Get Now",IDC_G_BUTGET,255,31,50,14
+    CONTROL         "",IDC_G_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,33,31,213,104
+    GROUPBOX        "Single Sytem",IDC_STATIC,26,170,286,42
+    GROUPBOX        "Group of System",IDC_STATIC,26,20,286,151
+    LTEXT           "Starting IP",IDC_STATIC,36,142,47,8
+    LTEXT           "End IP",IDC_STATIC,142,142,36,8
+    GROUPBOX        "Get The Physical Address of Network Computers",
+                    IDC_STATIC,8,5,322,217
+    GROUPBOX        "Range Of IP to Scan",IDC_STATIC,32,135,213,33
+END
+
+IDD_REGCONFIG DIALOGEX 0, 0, 387, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,14,31,295,131
+    PUSHBUTTON      "UP",IDC_BUTTON3,97,14,50,14
+    DEFPUSHBUTTON   "Set Values",IDC_BUTTON1,319,49,42,14
+    PUSHBUTTON      "RegEdit",IDC_BUTTON2,319,70,42,14
+    COMBOBOX        IDC_EDTHKEY,15,165,96,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDTPATH,112,165,261,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTVALNAME,14,184,164,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_EDTTYPE,185,184,87,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDTDATA,279,184,94,12,ES_AUTOHSCROLL
+    GROUPBOX        "Registry Editor",IDC_STATIC,7,7,373,203
+END
+
+IDD_TIP DIALOGEX 0, 0, 242, 171
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_CAPTION,55,15,119,8
+    LTEXT           "Static",IDC_MESSAGE,15,39,213,117
+END
+
+IDD_PORTSCANSIP DIALOGEX 0, 0, 316, 281
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,17,30,100,
+                    15
+    EDITTEXT        IDC_EDTPORT1,122,30,47,15,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDTPORT2,173,30,47,15,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "Scan",IDC_BUTSCAN,260,30,44,15
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,15,48,290,201
+    GROUPBOX        "TCP Port Scan (Single IP)",IDC_STATIC,7,7,302,267
+    LTEXT           "IP of Computer to Scan",IDC_STATIC,17,20,76,8
+    LTEXT           "Starting Port",IDC_STATIC,122,20,42,8
+    LTEXT           "Ending Port",IDC_STATIC,173,20,38,8
+    LTEXT           "",IDC_OUT2,15,254,287,17
+END
+
+IDD_DOSSMURF DIALOGEX 0, 0, 418, 268
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_RTLREADING | WS_EX_LEFTSCROLLBAR
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPVICTIM,"SysIPAddress32",WS_TABSTOP,80,22,100,15,
+                    WS_EX_RTLREADING | WS_EX_LEFTSCROLLBAR
+    LTEXT           "Victim's IP",IDC_STATIC,11,22,32,8,0,WS_EX_RTLREADING
+    DEFPUSHBUTTON   "Start Attack",IDC_START,59,176,63,14,0,WS_EX_RTLREADING
+    GROUPBOX        "Smurf Attack",IDC_STATIC,7,7,180,247,0,WS_EX_RTLREADING
+    CONTROL         176,IDC_STATIC,"Static",SS_BITMAP,194,7,220,251
+    EDITTEXT        IDC_DELAY,80,109,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NUMBEROFPACKETS,80,137,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Delay (milliseconds)",IDC_STATIC,11,109,63,8,
+                    SS_CENTERIMAGE
+    LTEXT           "Num of Packets",IDC_STATIC,11,137,50,8,SS_CENTERIMAGE
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | 
+                    WS_BORDER,14,204,154,10
+    CTEXT           "ICMP ECHO",IDC_STATIC,80,80,100,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "255  .  255  .  255 .  255",IDC_STATIC,80,51,100,15,
+                    SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "Type of Packet",IDC_STATIC,11,80,49,8
+    LTEXT           "Destination IP",IDC_STATIC,11,51,46,8
+END
+
+IDD_DIALOGRAW DIALOGEX 0, 0, 425, 238
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPSRC,"SysIPAddress32",WS_TABSTOP,95,26,100,15
+    CONTROL         "",IDC_IPDEST,"SysIPAddress32",WS_TABSTOP,95,45,100,15
+    COMBOBOX        IDC_PROTO,95,64,100,58,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_TTL,152,80,43,15,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NUMOFPACKET,151,116,43,15,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DELAY,151,99,44,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SRCPORT,152,135,43,15,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_DESTPORT,152,154,43,15,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_DATASIZE,151,173,44,15,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "Send",IDC_SEND,101,208,50,14
+    LTEXT           "",IDC_INFO,209,26,204,173
+    GROUPBOX        "Raw Packet Sender",IDC_STATIC,17,7,400,224
+    LTEXT           "Source IP",IDC_STATIC,24,26,57,15,SS_CENTERIMAGE
+    LTEXT           "Destination IP",IDC_STATIC,24,45,54,15,SS_CENTERIMAGE
+    LTEXT           "Soource Port Number",IDC_LBLSRCPORT,24,135,69,15,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    LTEXT           "Time To Live",IDC_STATIC,24,80,40,15,SS_CENTERIMAGE
+    LTEXT           "Packet Type",IDC_STATIC,24,64,40,8,SS_CENTERIMAGE
+    LTEXT           "Number of Packets",IDC_STATIC,23,116,61,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Destination Port Number",IDC_LBLDESTPORT,24,154,79,15,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    LTEXT           "Packet Data Size",IDC_LBLDATASIZE,24,173,63,9,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    CONTROL         "",IDC_PGRS,"msctls_progress32",NOT WS_VISIBLE | 
+                    WS_BORDER | 0x1,205,212,204,11
+    LTEXT           "Delay (milliseconds)",IDC_STATIC,24,99,63,8,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Send the Packets",IDC_STATIC,21,17,182,207
+END
+
+IDD_PWD_HASH DIALOGEX 0, 0, 326, 214
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PASSTEXT,5,156,134,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ALGORITHM,148,157,98,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PASSHASH,5,183,241,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Extract Hash",IDC_EXTRHASH,236,118,61,14
+    PUSHBUTTON      "Get Hash",IDC_GETHASH,250,183,47,14
+    CONTROL         "",IDC_LISTHASH,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,18,291,97
+    GROUPBOX        "System Password Hash",IDC_STATIC,0,7,305,130
+    GROUPBOX        "Password Hash",IDC_STATIC,0,140,306,62
+    LTEXT           "Enter the Password here",IDC_STATIC,10,148,80,8
+    LTEXT           "Choose the Algorithm",IDC_STATIC,148,149,70,8
+    LTEXT           "Password Hash",IDC_STATIC,5,175,50,8
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 429, 280
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         186,IDC_STATIC,"Static",SS_BITMAP,7,7,407,261
+    PUSHBUTTON      "Connect",IDC_BTCONNECT,339,48,72,15
+    PUSHBUTTON      "Exit",IDC_BTEXIT,339,78,72,15
+    LTEXT           "Static",IDC_DETAIL,262,164,143,96,0,WS_EX_RTLREADING
+    GROUPBOX        "",IDC_STATIC,256,159,153,105
+    PUSHBUTTON      "About",IDC_BTABOUT,339,111,72,14
+END
+
+IDD_WNDLSTDLG DIALOGEX 0, 0, 440, 262
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,13,17,145,218
+    EDITTEXT        IDC_MCAPTION,206,27,197,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MCORD_W,251,45,152,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MCORD_C,252,64,151,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MSTYLES,221,83,55,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEXSTYLE,357,83,46,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MWIDTH,224,100,91,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Window List",IDC_STATIC,7,7,416,240
+    LTEXT           "Caption",IDC_STATIC,171,27,26,12,SS_CENTERIMAGE
+    LTEXT           "Window coordinates",IDC_STATIC,171,45,66,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Client area coordinates",IDC_STATIC,171,64,75,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Window styles",IDC_STATIC,171,83,47,12,SS_CENTERIMAGE
+    LTEXT           "Extended window styles",IDC_STATIC,279,83,78,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Border(Wd , Ht)",IDC_STATIC,171,100,52,12,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Window Info",IDC_STATIC,162,17,253,100
+    LTEXT           "Pixel(s)",IDC_STATIC,319,100,24,12,SS_CENTERIMAGE
+    GROUPBOX        "Functions",IDC_STATIC,161,121,256,119
+    PUSHBUTTON      "Hide",IDC_BUTTON2,167,130,39,11
+    PUSHBUTTON      "Close",IDC_BUTTON5,167,168,39,11
+    PUSHBUTTON      "Set Text",IDC_BUTTON7,217,148,68,13
+    PUSHBUTTON      "Unhide",IDC_BUTTON8,167,149,39,11
+    PUSHBUTTON      "Enable",IDC_BUTTON4,167,187,39,11
+    PUSHBUTTON      "Disable",IDC_BUTTON6,167,206,39,11
+    EDITTEXT        IDC_SETCAPTION,217,130,68,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "RefreshList",IDC_REFRESH,167,225,39,11
+    PUSHBUTTON      "Find Window",IDC_BTFINDWINDOW,217,188,68,13
+    EDITTEXT        IDC_FINDTXT,217,170,68,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME,291,130,120,104
+END
+
+IDD_GETIP DIALOGEX 0, 0, 143, 59
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter the IP of Remote Computer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,38,50,14
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,7,20,129,
+                    15
+    LTEXT           "Enter the IP of Remote Computer ?",IDC_STATIC,7,7,129,
+                    11
+END
+
+IDD_DLGSYSINFO DIALOGEX 0, 0, 424, 286
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "System Information",IDC_STATIC,7,7,410,270
+    EDITTEXT        IDC_EDTINFO,16,26,380,235,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Get Information",IDC_GETINFO,182,260,63,14
+END
+
+IDD_DLGSYSCONTROL DIALOGEX 0, 0, 424, 277
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "End Task",IDC_BTENDTASK,50,187,50,14
+    COMBOBOX        IDC_CMBPRTY,22,211,78,61,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set Priority",IDC_BTSETPRTY,50,227,50,14
+    PUSHBUTTON      "Rfresh List",IDC_REFRESH,50,246,50,14
+    COMBOBOX        IDC_COMBO1,159,187,48,45,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,268,187,48,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TXTFILE,156,203,159,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXTFILE2,156,218,159,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXTFILE3,156,233,159,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_BTCLEAR,196,249,50,13
+    PUSHBUTTON      "Execute",IDC_BTEXE,265,249,50,13
+    PUSHBUTTON      "ShutDown",IDC_BTSHUTDOWN,332,189,50,14
+    PUSHBUTTON      "Log Off",IDC_BTLOGOFF,332,206,50,14
+    PUSHBUTTON      "Lock",IDC_BTLOCK,332,223,50,14
+    PUSHBUTTON      "Restart",IDC_BTRESTART,332,240,50,14
+    GROUPBOX        "Exit Windows",IDC_STATIC,326,178,61,86
+    GROUPBOX        "Task Functions",IDC_STATIC,18,178,91,85
+    CONTROL         "",IDC_LSTPROCESS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,22,372,150
+    GROUPBOX        "New Task",IDC_STATIC,117,178,203,86
+    LTEXT           "File Path",IDC_STATIC,120,205,28,8
+    LTEXT           "Base Priority",IDC_STATIC,22,201,41,8
+    GROUPBOX        "System Control",IDC_STATIC,7,7,394,263
+    LTEXT           "Operation",IDC_STATIC,123,187,33,8
+    LTEXT           "Window Mode",IDC_STATIC,221,187,46,8
+    LTEXT           "Arguments",IDC_STATIC,120,219,36,8
+    LTEXT           "Directory",IDC_STATIC,120,234,30,8
+END
+
+IDD_DESKDLG DIALOGEX 0, 0, 437, 294
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DISP,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    WS_BORDER,7,8,399,242
+    DEFPUSHBUTTON   "Start Refreshing",IDOK,319,255,73,17
+END
+
+IDD_PORTSCAN DIALOGEX 0, 0, 358, 281
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,26,33,100,
+                    15
+    CONTROL         "",IDC_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,129,33,100,
+                    15
+    EDITTEXT        IDC_EDTPORT,243,33,34,15,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "Scan",IDC_SCANNOW,294,33,42,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,20,55,316,190
+    GROUPBOX        "TCP Port Scan (Single Port) ",IDC_STATIC,7,7,335,267
+    LTEXT           "Starting IP",IDC_STATIC,26,23,35,8
+    LTEXT           "Ending IP",IDC_STATIC,129,23,31,8
+    LTEXT           "Port",IDC_STATIC,243,23,14,8
+    GROUPBOX        "Range Of IP to Scan",IDC_STATIC,19,15,214,38
+    LTEXT           "",IDC_OUT1,26,250,290,17
+END
+
+IDD_DOSSYN DIALOGEX 0, 0, 416, 286
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,89,24,100,
+                    15
+    EDITTEXT        IDC_VICTIMPORT,89,44,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Victim's IP",IDC_STATIC,24,24,32,8,SS_CENTERIMAGE
+    LTEXT           "Victim's Port",IDC_STATIC,24,44,39,8,SS_CENTERIMAGE
+    CONTROL         "",IDC_IP1,"SysIPAddress32",WS_TABSTOP,89,87,100,15
+    CONTROL         "",IDC_IP2,"SysIPAddress32",WS_TABSTOP,89,105,100,15
+    LTEXT           "Starting IP",IDC_STATIC,24,87,35,8,SS_CENTERIMAGE
+    LTEXT           "Ending IP",IDC_STATIC,24,105,31,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_SRCPORT,89,123,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Port",IDC_STATIC,24,123,14,8,SS_CENTERIMAGE
+    LTEXT           "Type of Packet",IDC_STATIC,24,147,49,8,SS_CENTERIMAGE
+    CTEXT           "TCP SYN",IDC_STATIC,89,147,100,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_DELAY,89,167,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NUMOFPACKETS,89,186,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Start Attack",IDC_START,77,208,50,14
+    LTEXT           "Delay (milliseconds)",IDC_STATIC,24,167,63,8,
+                    SS_CENTERIMAGE
+    LTEXT           "No. Of Packets",IDC_STATIC,24,186,49,8,SS_CENTERIMAGE
+    GROUPBOX        "Source IP/Port",IDC_STATIC,17,63,177,79
+    GROUPBOX        "SYN Flag Attack",IDC_STATIC,14,7,186,265
+    LTEXT           "Enter Range of IP which is not  present on network",
+                    IDC_STATIC,21,75,164,8,SS_CENTERIMAGE
+    CONTROL         183,IDC_STATIC,"Static",SS_BITMAP,204,7,205,270
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",NOT WS_VISIBLE | 
+                    WS_BORDER | 0x1,20,252,175,14
+END
+
+IDD_UDPFLOOD DIALOGEX 0, 0, 426, 274
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,90,24,100,
+                    15
+    LTEXT           "Victim's IP",IDC_STATIC,24,24,32,8,SS_CENTERIMAGE
+    LTEXT           "Victim's Port",IDC_STATIC,24,46,39,8,SS_CENTERIMAGE
+    LTEXT           "Type of Packet",IDC_STATIC,24,149,49,8,SS_CENTERIMAGE
+    CTEXT           "UDP",IDC_STATIC,90,149,100,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_DELAY,90,174,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NUMOFPACKETS,90,192,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Start Attack",IDC_BTSTART,79,210,50,14
+    LTEXT           "Delay (milliseconds)",IDC_STATIC,24,174,63,8,
+                    SS_CENTERIMAGE
+    LTEXT           "No. Of Packets",IDC_STATIC,24,192,49,8,SS_CENTERIMAGE
+    GROUPBOX        "UDP Flood Attack",IDC_STATIC,14,7,186,253
+    CONTROL         182,IDC_STATIC,"Static",SS_BITMAP,220,7,181,249
+    CONTROL         "",IDC_IP1,"SysIPAddress32",WS_TABSTOP,90,87,100,15
+    CONTROL         "",IDC_IP2,"SysIPAddress32",WS_TABSTOP,90,105,100,15
+    LTEXT           "Starting IP",IDC_STATIC,24,87,35,8,SS_CENTERIMAGE
+    LTEXT           "Ending IP",IDC_STATIC,24,105,31,8,SS_CENTERIMAGE
+    LTEXT           "Port",IDC_STATIC,24,123,14,8,SS_CENTERIMAGE
+    GROUPBOX        "Source IP/Port",IDC_STATIC,17,63,177,81
+    LTEXT           "Enter Range of IP which is not  present on network",
+                    IDC_STATIC,24,75,164,8,SS_CENTERIMAGE
+    CTEXT           "Random",IDC_STATIC,90,123,100,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | 
+                    WS_BORDER,19,234,175,14
+    CTEXT           "Random",IDC_STATIC,90,46,100,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+END
+
+IDD_PACKETCAP DIALOGEX 0, 0, 456, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LSTCAP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,9,21,403,214
+    GROUPBOX        "Packet Sniffer",IDC_STATIC,7,7,414,265
+    EDITTEXT        IDC_DATA,9,245,408,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Stop",IDC_BUTTON1,363,258,50,12
+    LTEXT           "ASCII Data in Stream",IDC_STATIC,9,236,69,8
+    PUSHBUTTON      "Clear List",IDC_CLEAR,205,258,50,12
+    COMBOBOX        IDC_IPLIST,262,259,90,42,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NETINFO DIALOGEX 0, 0, 428, 277
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_INFOHOSTNAME,64,16,91,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_INFODOMAINNAME,64,38,91,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_INFODNSSERVER,64,60,91,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_INFONODETYPE,64,82,91,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_INFODHCPSNAME,303,15,91,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_INFOROUTING,303,38,91,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_INFODNS,303,61,91,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_INFOPROXY,303,84,91,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_INFO,15,118,387,140,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "Network Adapters on Local Computer",IDC_STATIC,7,107,
+                    403,156
+    LTEXT           "DNS Server",IDC_STATIC,16,60,38,8,SS_CENTERIMAGE
+    LTEXT           "Node Type",IDC_STATIC,16,82,36,8,SS_CENTERIMAGE
+    LTEXT           "DHCP Scope Name",IDC_STATIC,237,15,60,8,SS_CENTERIMAGE
+    LTEXT           "Proxy",IDC_STATIC,237,84,20,8,SS_CENTERIMAGE
+    LTEXT           "Domain Name",IDC_STATIC,16,38,44,8,SS_CENTERIMAGE
+    LTEXT           "Host Name",IDC_STATIC,16,16,36,8,SS_CENTERIMAGE
+    LTEXT           "Routing",IDC_STATIC,237,38,26,8,SS_CENTERIMAGE
+    LTEXT           "DNS",IDC_STATIC,237,61,14,8,SS_CENTERIMAGE
+    GROUPBOX        "Network Parameters",IDC_STATIC,7,5,406,103
+END
+
+IDD_NETSTAT DIALOGEX 0, 0, 422, 273
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Network Statistics",IDC_STATIC,7,7,408,247
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,17,145,190,99
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,220,34,190,99
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,220,145,190,99
+    CONTROL         "",IDC_LIST5,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,17,34,190,99
+    GROUPBOX        "IP Statistics",IDC_STATIC,10,24,201,112
+    GROUPBOX        "UDP Statistics",IDC_STATIC,216,24,197,112
+    GROUPBOX        "TCP Statistics",IDC_STATIC,10,136,201,112
+    GROUPBOX        "ICMP Statistics",IDC_STATIC,216,136,197,112
+END
+
+IDD_CONNECTIONTABLE DIALOGEX 0, 0, 414, 273
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,12,16,388,207
+    GROUPBOX        "Connection Table (list of connections on local computer)",
+                    IDC_STATIC,7,7,400,259
+    PUSHBUTTON      "Refresh",IDC_REFRESHTABLE,350,226,50,14
+    LTEXT           "Note: A value of addr 0.0.0.0 indicates that listener will accept a connection on any interface.",
+                    IDC_STATIC,17,229,302,8
+END
+
+IDD_VSCAN DIALOGEX 0, 0, 421, 282
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Scan for the velnerability",IDC_STATIC,3,3,411,271
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,43,15,100,
+                    15
+    LTEXT           "Victim's IP",IDC_STATIC,8,18,32,8
+    LTEXT           "",IDC_OUT3,208,15,193,16
+    PUSHBUTTON      "Scan",IDC_SCANNOW,147,15,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,9,94,278,169
+    EDITTEXT        IDC_EDIT1,292,94,118,169,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,107,49,122,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Probable Operating System",IDC_STATIC,13,49,88,8,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT3,107,72,122,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Physical Address",IDC_STATIC,13,72,54,8
+END
+
+IDD_REVENGG DIALOGEX 0, 0, 422, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FILENAME,98,50,174,14,ES_AUTOHSCROLL
+    GROUPBOX        "Inject Dll to Hack Process",IDC_STATIC,6,2,360,270
+    PUSHBUTTON      "Browse",IDC_BRWS,279,50,50,14
+    PUSHBUTTON      "Execute",IDC_BTEXECUTE,216,102,50,14
+    EDITTEXT        IDC_FILENAME2,98,83,174,14,ES_AUTOHSCROLL
+    LTEXT           "Command Line",IDC_STATIC,98,74,47,8
+    LTEXT           "Executable Name (with fullPath if not in %PATH%)",
+                    IDC_STATIC,98,39,163,8
+    GROUPBOX        "Lounch New",IDC_PNEW,92,26,251,94
+    GROUPBOX        "Running",IDC_POLD,92,124,251,44
+    COMBOBOX        IDC_COMBO1,98,137,239,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Select Process",IDC_STATIC,15,21,338,153
+    CONTROL         "New Process",IDC_RNEW,"Button",BS_AUTORADIOBUTTON,24,40,
+                    57,10
+    CONTROL         "Existing Process",IDC_RRUN,"Button",BS_AUTORADIOBUTTON,
+                    21,135,67,10
+    EDITTEXT        IDC_DLLPATH,76,208,203,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BRWS2,286,208,50,14
+    LTEXT           "Dll To Inject",IDC_STATIC,29,211,39,8,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "Inject Dll",IDC_BUTTON1,152,235,50,14
+    EDITTEXT        IDC_EDTPID,76,191,40,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "ProcessId",IDC_STATIC,29,191,32,8
+    GROUPBOX        "Inject Dll",IDC_STATIC,15,179,338,73
+    PUSHBUTTON      "Refresh List",IDC_BTREFRESH,287,152,50,14
+    PUSHBUTTON      "Terminate",IDC_TERMINATE,224,152,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Redeemers"
+            VALUE "FileDescription", "Hackpro"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "HackPro.exe"
+            VALUE "LegalCopyright", "Redeemers © All Rights Reserved ®"
+            VALUE "LegalTrademarks", "RdM"
+            VALUE "OriginalFilename", "HackPro.exe"
+            VALUE "ProductName", "HackPro"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_HACKPRO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 529
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_MACADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_REGCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_TIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_PORTSCANSIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_DOSSMURF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 395
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_DIALOGRAW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_PWD_HASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 419
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_WNDLSTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_GETIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_DLGSYSINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_DLGSYSCONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_DESKDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 436
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_PORTSCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_DOSSYN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_UDPFLOOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 419
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_PACKETCAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 448
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_NETINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 421
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_NETSTAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_CONNECTIONTABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 407
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_VSCAN, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 281
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\HackPro.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_REGCONFIG DLGINIT
+BEGIN
+    IDC_EDTHKEY, 0x403, 18, 0
+0x4b48, 0x5945, 0x435f, 0x414c, 0x5353, 0x5345, 0x525f, 0x4f4f, 0x0054, 
+
+    IDC_EDTHKEY, 0x403, 20, 0
+0x4b48, 0x5945, 0x435f, 0x5255, 0x4552, 0x544e, 0x435f, 0x4e4f, 0x4946, 
+0x0047, 
+    IDC_EDTHKEY, 0x403, 18, 0
+0x4b48, 0x5945, 0x435f, 0x5255, 0x4552, 0x544e, 0x555f, 0x4553, 0x0052, 
+
+    IDC_EDTHKEY, 0x403, 19, 0
+0x4b48, 0x5945, 0x4c5f, 0x434f, 0x4c41, 0x4d5f, 0x4341, 0x4948, 0x454e, 
+"\000" 
+    IDC_EDTTYPE, 0x403, 7, 0
+0x4552, 0x5f47, 0x5a53, "\000" 
+    IDC_EDTTYPE, 0x403, 10, 0
+0x4552, 0x5f47, 0x5744, 0x524f, 0x0044, 
+    IDC_EDTTYPE, 0x403, 11, 0
+0x4552, 0x5f47, 0x4942, 0x414e, 0x5952, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DOS                 BITMAP                  "res\\dos.bmp"
+IDB_UDPFLOOD            BITMAP                  "res\\UDP FLOOD.bmp"
+IDB_SYNFLAG             BITMAP                  "res\\SYNFlag.bmp"
+IDB_BITMAP3             BITMAP                  "res\\anhack.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_HACKPRO             REGISTRY                "HackPro.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU3 MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Connect",                     ID_FILE_CONNECT
+        MENUITEM "Exit",                        ID_Menu
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+    POPUP "Window"
+    BEGIN
+        MENUITEM "Show",                        ID_WINDOW_SHOWMAINWINDOW
+        MENUITEM "Hide to Tray",                ID_WINDOW_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About HackPro"
+    START_MENU_SCROLL       "Start Menu Scroll~When there are more items on the Start Menu than can fit on the screen, Windows can either create a second column of items or it can create a scrolling menu. This tweak controls that functionality.~HKEY_LOCAL_MACHINE~Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced~StartMenuScrollPrograms~REG_SZ~Yes"
+    MYCOMPUTER_REMOVE       "Remove My Computer ShortCut~This restriction removes My Computer from the desktop and Start menu.\n 0 = show, 1 = remove~HKEY_LOCAL_MACHINE~Software\\microsoft\\windows\\currentVersion\\policies\\nonEnum~20D04FE0-3AEA-1069-A2D8-08002B30309D~REG_DWORD ~1"
+    RUN_REMOVE              "Remove Run from the Start Menu~ Removes the ability to launch commands or processes from the Start menu by removing the Run option.(0 = disabled, 1 = enabled)~HKEY_CURRENT_USER~Software\\Microsoft\\Windows\\CurrentVersion\\Policies~NoRun~REG_DWORD~0"
+    DISABLE_RECENT_WMEDIA   "Disable Recent Files in Media Player ~This restriction will stop Windows Media Player from storing the names of the played media in the recent file list.(00 = disabled, 01 = enabled)~HKEY_CURRENT_USER~Software\\Microsoft\\MediaPlayer\\Preferences~AddToMRU~REG_BINARY~00 "
+    DESKTOP_RIGHTCLICK      "Disable the Ability to Right Click on the Desktop ~This tweak removes the context menu that would normally appear when the user right clicks on the desktop or in the Explorer right results pane.\n(0 = disabled, 1 = enabled)~HKEY_CURRENT_USER~Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\explorer~NoViewContextMenu~REG_DWORD ~0 "
+    INTERNET_NEWWINDOW      "Open Internet Explorer Shortcuts in a New Window ~This setting controls whether Internet shortcuts are opened in an existing available Internet Explorer window or whether a new window should be spawned.\n(0 = new window, 1 = existing window)~HKEY_CURRENT_USER~Software\\Microsoft\\Internet Explorer\\Main~AllowWindowReuse~REG_DWORD~1"
+    DESKTOP_CHANGEWALLPOS   "Change the Position of the Desktop Wallpaper ~Unfortunately Windows only gives you the limited options of center or tile for the placement of the desktop wallpaper. With this setting you can move the image anyway on your desktop.\n\nCreate two new string values of 'Wallpaperoriginx' and 'Wallpaperoriginy'. If the values already exist then you simply modify them~HKEY_CURRENT_USER~Control Panel\\Desktop~Wallpaperoriginx~REG_SZ ~Distance in Pixels"
+    PRIVACY_CLEARPAGEPFILE  "Clear the Page File at System Shutdown ~Windows does not normally clear or recreate the page file. On a heavily used system this can be both a security threat and performance drop. Enabling this setting will cause Windows to clear the page file whenever the system is shutdown.(0 = disabled, 1 = enabled)~HKEY_LOCAL_MACHINE~SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management~ClearPageFileAtShutdown~REG_DWORD~1"
+    SECURITY_USERTRACKING   "Disable User Tracking ~This setting stops Windows from recording user tracking information including which applications a user runs and which files and documents are being accessed.\n(1 = enable restriction)~HKEY_LOCAL_MACHINE~Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer~NoInstrumentation~REG_DWORD~1"
+    SECURITY_MMCSNAPING     "Restrict use of Management Console (MMC) Snap-ins ~Enable this setting, to restrict access to all snap-ins, except those that you explicitly permit via the Group Policy Restricted/Permitted snap-ins setting folder.\n(0 = default, 1 = enable restriction)~HKEY_CURRENT_USER~Software\\Policies\\Microsoft\\MMC~RestrictToPermittedSnapins~REG_DWORD~1"
+END
+
+STRINGTABLE 
+BEGIN
+    SECURITY_MMCAUTHORMODE  "Restrict Author Mode in Management Console~This restriction stops users from opening the Microsoft Management Console and relevant .mmc console files in author mode.\n(0 = default, 1 = enable restriction)~HKEY_CURRENT_USER~Software\\Policies\\Microsoft\\MMC~RestrictAuthorMode~REG_DWORD~1"
+    HARDWARE_CDAUTORUN      "Control the CD-ROM Autorun Function ~Normally when you insert a disc into your CD-ROM drive, the contents are automatically launched. This tweak allows you to disable this behavior.\n(0=disable, 1=enable)~HKEY_LOCAL_MACHINE~SYSTEM\\CurrentControlSet\\Services\\CDRom~Autorun~REG_DWORD~0"
+    SECURITY_SECURITYDIALOG "Customize the Windows Logon and Security Dialog Title~This setting allows you to add additional text to the title of the standard Windows Logon and Windows Security dialog boxes.~HKEY_LOCAL_MACHINE~SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon~Welcome~REG_SZ~Text to display"
+    SECURITY_MESSAGEBLOG    "Legal Notice Dialog Box Before Logon ~Use these fields to create a dialog box that will be presented to any user before logging onto the system. This is useful where you are required by law to warn people that it is illegal to attempt to logon without being an authorized user.\nCreate two values\n1.LegalNoticeCaption\n2. LegalNoticeText~HKEY_LOCAL_MACHINE~SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon~LegalNoticeCaption~REG_SZ~Redeemer"
+    SECURITY_CHANGEPASSDISABLE 
+                            "Disable the Change Password Button~This setting disables the 'Change Password' button on the Windows Security dialog box. Enabling this setting stops casual users from being able to change the password.\n(0 = disabled, 1 = enabled)\nYou can use any of the \nHKEY_CURRENT_USER or \nHKEY_LOCAL_MACHINE~HKEY_LOCAL_MACHINE\nNOTE:only for nt & win2000~Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System~DisableChangePassword~REG_DWORD~0"
+    PRIVACY_LASTUSER        "Restrict Showing the Last Username ~This restriction removes the ability to view which user was last logged onto a computer by clearing the username box on the login screen.\n(1 = remove username)\nUse Any\n1.HKEY_CURRENT_USEROFTWAREicrosoft\n2.HKEY_LOCAL_MACHINE~HKEY_LOCAL_MACHINE~SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System~DontDisplayLastUserName~REG_DWORD~1"
+    PRIVACY_HIDEDRIVES      "Hide Drives in My Computer ~This setting allows you to control which drives are visible in My Computer and Explorer. It is possible to hide all drives or just selected ones.\nThe ""NoDrives"" value uses a 32-bit word to define local and network drive visibility for each logical drive in the computer. The lower 26 bits of the 32-bit word correspond to drive letters A through Z. Drives are visible when set to 0 and hidden when set to 1.\nA: 1, B: 2, C: 4, D: 8, E: 16, F: 32, G: 64, H: 128, I: 256, J: 512, K: 1024, L: 2048, M: 4096, N: 8192, O: 16384, P: 32768, Q: 65536, R: 131072, S: 262144, T: 524288, U: 1048576, V: 2097152, W: 4194304, X: 8388608, Y: 16777216, Z: 33554432, ALL: 67108863 \n you can use any value\n1HKEY_CURRENT_USER\n2HKEY_LOCAL_MACHINE~HKEY_LOCAL_MACHINE~Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer~NoDrives~REG_DWORD~67108863"
+    SOFTAWARE_OPENCMD       "Add Command Prompt Option to Every Folder ~This adds the 'open command prompt here ' option in the context menu of explorer so that you can open the command prompt at the same folder.~HKEY_CLASSES_ROOT~Directory\\shell\\Command\\command~(Default)~REG_SZ~cmd.exe /k cd %1"
+    SECURITY_DISABLETASKM   "Disable Task Manager~This setting controls the ability for users to start Task Manager and view processes, running applications and make changes to the priority or state of the individual processes.\n(0 = default, 1 = disable Task Manager)~HKEY_CURRENT_USER~Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System~DisableTaskMgr~REG_DWORD~1"
+    SECURITY_IMPORTREG      "Avoid Accidental Registry Imports with Regedit~By default if you double-click on a file with a '.REG' extension the file will be imported into the system registry. You can change the default so it opens the file for editing instead.~HKEY_CLASSES_ROOT~regfile\\shell~(Default)~REG_SZ~edit"
+    SECURITY_DISDISPLAY     "Deny Access to the Display Settings~This option disables the display settings control panel icon, and stops users from accessing any display settings.\n(0 = disabled, 1 = enabled)~HKEY_CURRENT_USER~Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System~NoDispCPL~REG_DWORD~0"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\HackPro.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+1 TYPELIB "HackPro.tlb"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
